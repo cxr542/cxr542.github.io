@@ -1,0 +1,41 @@
+{
+  "name": "adri-fluid-dark",
+  "version": "1.0.0",
+  "description": "[자기소개서.md](자기소개서.md) 내용을 바탕으로 한 **정적 1페이지 프로필**입니다.  \r HTML · CSS · JavaScript만 사용하며, [adri-fluid-dark](.cursor/skills/adri-fluid-dark/SKILL.md) 에디토리얼 다크 테마를 적용했습니다.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "duplexer": "^0.1.2",
+    "event-stream": "^3.3.5",
+    "from": "^0.1.7",
+    "map-stream": "^0.0.7",
+    "pause-stream": "^0.0.11",
+    "sax": "^0.6.1",
+    "split": "^1.0.1",
+    "stream-combiner": "^0.2.2",
+    "through": "^2.3.8",
+    "xmldoc": "^0.1.4"
+  },
+  "devDependencies": {
+    "node-hwp": "^0.1.0-alpha"
+  },
+  "scripts": {
+    "hwp:extract": "node scripts/hwp-to-md.mjs",
+    "hwp:resume": "node scripts/extract-hwp.mjs docs/이력서(김윤형)_20241212.hwp docs/이력서-추출-raw.txt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cxr542/cxr542.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/cxr542/cxr542.github.io/issues"
+  },
+  "homepage": "https://github.com/cxr542/cxr542.github.io#readme"
+}
