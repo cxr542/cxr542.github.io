@@ -32,13 +32,23 @@ npx serve .
 
 ## GitHub Pages 배포
 
-1. GitHub에 저장소 생성 후 push (`index.html`, `styles/`, `js/` 포함)
-2. **Settings → Pages → Build and deployment**
+로컬에서 `main` 브랜치에 초기 커밋이 준비되어 있습니다. GitHub에 **새 저장소**를 만든 뒤:
+
+```powershell
+cd "C:\Users\USER\OneDrive - 오케스트로\01. 개인\cursorstudy\adri-fluid-dark"
+git remote add origin https://github.com/<USERNAME>/<REPO>.git
+git push -u origin main
+```
+
+1. GitHub **Settings → Pages → Build and deployment**
    - Source: **Deploy from a branch**
    - Branch: `main`, Folder: **`/ (root)`**
-3. 1~2분 후 `https://<username>.github.io/<repo>/` 접속
+2. 1~2분 후 `https://<username>.github.io/<repo>/` 접속
+3. 배경이 검정·amber 강조면 `styles/tokens.css` 로드 성공 (흰 배경이면 Network 탭에서 404 확인)
 
 저장소 이름이 `<username>.github.io`이면 사용자 사이트 루트에 배포됩니다.
+
+배포에 포함되는 파일: `index.html`, `styles/`(含 `tokens.css`), `js/`, `.nojekyll` — `.cursor/`는 `.gitignore`로 제외됩니다.
 
 ## 디자인 스킬
 
