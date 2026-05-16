@@ -1,0 +1,5 @@
+.cursor/
+node_modules/
+dup-report.json
+scan-dupes.ps1
+scripts/

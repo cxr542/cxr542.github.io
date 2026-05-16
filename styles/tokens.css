@@ -1,0 +1,37 @@
+/* Adri Fluid dark theme — imported by styles/main.css */
+
+:root {
+  --color-bg: #0a0a0a;
+  --color-bg-elevated: #141414;
+  --color-bg-overlay: rgba(0, 0, 0, 0.65);
+
+  --color-accent: #e8a930;
+  --color-accent-hover: #f0b84a;
+  --color-accent-muted: rgba(232, 169, 48, 0.15);
+
+  --color-text: #f5f5f5;
+  --color-text-muted: #9a9a9a;
+  --color-text-on-accent: #0a0a0a;
+
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-border-subtle: rgba(255, 255, 255, 0.06);
+
+  --font-sans: "DM Sans", "Plus Jakarta Sans", system-ui, sans-serif;
+  --text-hero: clamp(2.75rem, 6vw, 4.5rem);
+  --text-stat: clamp(2.5rem, 5vw, 3.75rem);
+  --text-section: clamp(1.5rem, 3vw, 2rem);
+  --text-body: 1.0625rem;
+  --leading-tight: 1.1;
+  --leading-body: 1.65;
+
+  --space-section: clamp(4rem, 10vw, 7.5rem);
+  --space-block: clamp(1.5rem, 4vw, 2.5rem);
+  --content-max: 72rem;
+
+  --radius-pill: 9999px;
+  --radius-sm: 6px;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 180ms;
+  --duration-normal: 280ms;
+}
