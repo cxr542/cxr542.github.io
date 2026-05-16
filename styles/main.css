@@ -301,6 +301,39 @@ input:focus-visible {
   padding-top: clamp(2rem, 6vw, 4rem);
 }
 
+.hero__layout {
+  display: grid;
+  gap: clamp(2rem, 5vw, 3.5rem);
+  align-items: center;
+}
+
+@media (min-width: 56rem) {
+  .hero__layout {
+    grid-template-columns: minmax(0, 1fr) minmax(12rem, 16rem);
+  }
+}
+
+.hero__profile {
+  margin: 0;
+  justify-self: center;
+}
+
+@media (min-width: 56rem) {
+  .hero__profile {
+    justify-self: end;
+  }
+}
+
+.hero__profile img {
+  display: block;
+  width: min(100%, 16rem);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid var(--color-border-subtle);
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.35);
+}
+
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
