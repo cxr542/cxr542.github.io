@@ -28,7 +28,7 @@ npx serve .
 
 1. `index.html`에서 `<span class="placeholder">[이름]</span>` 등을 실제 값으로 교체
 2. 연락처·포트폴리오: `#contact-email`, `#contact-portfolio`의 `href`와 표시 텍스트를 실값으로 교체 (`example.com`이 아니면 헤더 포트폴리오 버튼이 외부 링크로 전환됨)
-3. (선택) `assets/`에 작업 이미지 추가 후 경력 카드에 `<img>` 연결
+3. (선택) `assets/images/`의 사진을 본인 작업물로 교체 — 출처는 [`assets/images/CREDITS.md`](assets/images/CREDITS.md) 참고
 
 ## GitHub Pages 배포
 
