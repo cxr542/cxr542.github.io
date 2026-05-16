@@ -694,6 +694,36 @@ input:focus-visible {
   color: var(--color-text-muted);
 }
 
+.stat__number--word {
+  font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+}
+
+.strength-list {
+  list-style: none;
+  margin: var(--space-block) 0 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+  max-width: 52ch;
+}
+
+.strength-list li {
+  padding-left: 1rem;
+  border-left: 2px solid var(--color-accent);
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+}
+
+.strength-list strong {
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+#about .stats__grid {
+  margin-top: var(--space-block);
+}
+
 /* Featured */
 .featured {
   padding-block: 0;
