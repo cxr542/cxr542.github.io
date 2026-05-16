@@ -1,6 +1,6 @@
-# 의상 디자이너 자기소개 사이트
+# 솔루션 교육 강사 자기소개 사이트
 
-[자기소개서.md](자기소개서.md) 내용을 바탕으로 한 **정적 1페이지 포트폴리오**입니다.  
+[자기소개서.md](자기소개서.md) 내용을 바탕으로 한 **정적 1페이지 프로필**입니다.  
 HTML · CSS · JavaScript만 사용하며, [adri-fluid-dark](.cursor/skills/adri-fluid-dark/SKILL.md) 에디토리얼 다크 테마를 적용했습니다.
 
 ## 로컬 미리보기
@@ -28,7 +28,7 @@ npx serve .
 
 1. `index.html`에서 `<span class="placeholder">[이름]</span>` 등을 실제 값으로 교체
 2. 연락처·포트폴리오: `#contact-email`, `#contact-portfolio`의 `href`와 표시 텍스트를 실값으로 교체 (`example.com`이 아니면 헤더 포트폴리오 버튼이 외부 링크로 전환됨)
-3. (선택) `assets/images/`의 사진을 본인 작업물로 교체 — 출처는 [`assets/images/CREDITS.md`](assets/images/CREDITS.md) 참고
+3. (선택) `assets/images/`의 사진을 실제 교육 현장·자료로 교체 — 출처는 [`assets/images/CREDITS.md`](assets/images/CREDITS.md) 참고
 
 ## GitHub Pages 배포
 
