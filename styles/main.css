@@ -123,6 +123,14 @@ input:focus-visible {
   color: var(--color-text);
 }
 
+.nav__external {
+  color: var(--color-accent);
+}
+
+.nav__external:hover {
+  color: var(--color-accent-hover);
+}
+
 .site-header.is-scrolled {
   background: rgba(10, 10, 10, 0.96);
   box-shadow: 0 1px 0 var(--color-border-subtle);
@@ -309,29 +317,60 @@ input:focus-visible {
 
 @media (min-width: 56rem) {
   .hero__layout {
-    grid-template-columns: minmax(0, 1fr) minmax(12rem, 16rem);
+    grid-template-columns: minmax(0, 1fr) minmax(13rem, 17.5rem);
+    align-items: start;
   }
 }
 
 .hero__profile {
   margin: 0;
   justify-self: center;
+  width: min(100%, 17.5rem);
 }
 
 @media (min-width: 56rem) {
   .hero__profile {
     justify-self: end;
+    margin-top: 0.25rem;
   }
 }
 
-.hero__profile img {
+/* Editorial portrait frame — ID photos read better in 4:5 card than circle crop */
+.hero__profile-card {
+  position: relative;
+  overflow: hidden;
+  padding: 0.35rem;
+  border-radius: 1rem;
+  background: linear-gradient(
+    155deg,
+    rgba(212, 168, 83, 0.35) 0%,
+    rgba(255, 255, 255, 0.06) 42%,
+    rgba(10, 10, 10, 0.9) 100%
+  );
+  box-shadow:
+    0 1.25rem 2.75rem rgba(0, 0, 0, 0.55),
+    0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+
+.hero__profile-card::after {
+  content: "";
+  position: absolute;
+  inset: 0.35rem;
+  border-radius: 0.7rem;
+  pointer-events: none;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.hero__profile-card img {
   display: block;
-  width: min(100%, 16rem);
-  aspect-ratio: 1;
+  width: 100%;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
-  border-radius: 50%;
-  border: 1px solid var(--color-border-subtle);
-  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.35);
+  object-position: 50% 14%;
+  border-radius: 0.7rem;
+  background: #e8e4dc;
+  transform: scale(1.08);
+  transform-origin: 50% 12%;
 }
 
 .hero__actions {
@@ -817,6 +856,19 @@ input:focus-visible {
 
 .footer__simple .footer__meta {
   margin: 0;
+}
+
+.footer__simple .footer__links {
+  margin: 0.75rem 0 0;
+}
+
+.footer__simple .footer__links a {
+  color: var(--color-accent);
+  font-size: 0.9375rem;
+}
+
+.footer__simple .footer__links a:hover {
+  color: var(--color-accent-hover);
 }
 
 /* Grid */
