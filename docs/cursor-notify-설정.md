@@ -27,10 +27,15 @@ notepad $env:USERPROFILE\.cursor\notify.env
 - `SMTP_PASS` = [앱 비밀번호](https://myaccount.google.com/apppasswords) **16자** (로그인 비밀번호 아님)
 - `SMTP_USER` = 앱 비밀번호를 만든 Gmail (`cxr542@gmail.com`)
 
-## 테스트
+## 테스트 (한글)
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File "$env:USERPROFILE\.cursor\hooks\notify-task-complete.ps1" -Subject "테스트" -Body "설정 확인" -Force
+$utf8 = [System.Text.UTF8Encoding]::new($false)
+$sub = "$env:TEMP\cursor-notify-subject.txt"
+$body = "$env:TEMP\cursor-notify-body.txt"
+[System.IO.File]::WriteAllText($sub, "테스트: 한글", $utf8)
+[System.IO.File]::WriteAllText($body, "[작업 요약]`n- 설정 확인", $utf8)
+powershell -NoProfile -ExecutionPolicy Bypass -File "$env:USERPROFILE\.cursor\hooks\notify-task-complete.ps1" -SubjectFile $sub -BodyFile $body -Force
 ```
 
 로그: `%USERPROFILE%\.cursor\hooks\notify.log`

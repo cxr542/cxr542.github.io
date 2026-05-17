@@ -1,5 +1,5 @@
 {
-  "name": "cxr542",
+  "name": "adri-fluid-dark",
   "version": "1.0.0",
   "description": "[자기소개서.md](자기소개서.md) 내용을 바탕으로 한 **정적 1페이지 프로필**입니다.  \r HTML · CSS · JavaScript만 사용하며, [adri-fluid-dark](.cursor/skills/adri-fluid-dark/SKILL.md) 에디토리얼 다크 테마를 적용했습니다.",
   "main": "index.js",
